@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -70,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -180,21 +181,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Data Science,Data Analytics,Machine Learning,Random Forest Algorithm" data-listing-date-sort="1677733200000" data-listing-file-modified-sort="1679543522163" data-listing-reading-time-sort="0.63">
-<div class="thumbnail">
-<p><a href="./projects/titanic/index.html"> <img src="./projects/titanic/image.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/titanic/index.html">
-<h3 class="no-anchor listing-title">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Data Science,Data Analytics,Machine Learning,Random Forest Algorithm" data-listing-date-sort="1677733200000" data-listing-file-modified-sort="1679543522163" data-listing-reading-time-sort="0.63">
+<a href="./projects/titanic/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/titanic/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Titanic Survival A Machine Learning Based Analysis
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Data Science'); return false;">
 Data Science
@@ -209,22 +207,20 @@ Machine Learning
 Random Forest Algorithm
 </div>
 </div>
-<a href="./projects/titanic/index.html">
-<div class="listing-description">
+<div class="card-text listing-description">
 Based on Kaggle’s ‘Titanic - Machine Learning from Disaster’ Machine Learning Competition (https://www.kaggle.com/competitions/titanic/data)
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/titanic/index.html">
-<div class="listing-date">
-Mar 2, 2023
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Gabriel Guzman
 </div>
-</a>
+<div class="listing-date">
+Mar 2, 2023
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -365,6 +361,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><span class="container"><strong>Made with <a href="https://quarto.org/" target="_blank">Posit Quarto</a></strong></span></div>   
+      <div class="nav-footer-center"><span class="container"><strong><a href="mailto:gabeguzman08@gmail.com" target="_blank">Contact: Gabriel Guzman</a></strong></span></div>
+    <div class="nav-footer-right"><span class="container"><strong><a href="https://github.com/sirplantman" target="_blank">Github Repo</a></strong></span></div>
+  </div>
+</footer>
 
 
 

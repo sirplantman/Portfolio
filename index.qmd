@@ -2,7 +2,7 @@
 title: "Gabriel Guzman"
 about:
   template: jolla
-  image: profile.jpg
+  image: images/profile.png
   links:
     - icon: linkedin
       text: LinkedIn
@@ -22,7 +22,9 @@ Biology and Environmental Science undergraduate interested in Data Science and D
 
 ## Education
 Gettysburg College | Gettysburg, PA
+
 B.S in Biology | Aug 2020 - May 2024
+
 B.S in Environmental Studie | Aug 2020 - May 2024
 
 ## Experience

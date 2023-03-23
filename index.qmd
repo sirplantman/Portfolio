@@ -18,9 +18,12 @@ about:
       href: mailto:gabeguzman08@gmail.com
 ---
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+Biology and Environmental Science undergraduate interested in Data Science and Data Analytics. 
 
 ## Education
+Gettysburg College | Gettysburg, PA
+B.S in Biology | Aug 2020 - May 2024
+B.S in Environmental Studie | Aug 2020 - May 2024
 
 University of California, San Diego | San Diego, CA
 PhD in Mathematics | Sept 2011 - June 2015

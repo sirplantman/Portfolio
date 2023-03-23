@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/titanic/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/titanic/index.html"
+    ]
+  }
+]

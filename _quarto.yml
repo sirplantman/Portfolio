@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Portfolio"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Resume
+        href: resume.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/sirplantman
+      - icon: linkedin
+        href: https://www.linkedin.com/in/gabeguzman/
+format:
+  html:
+    theme: lux
+    css: styles.css

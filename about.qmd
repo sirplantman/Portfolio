@@ -1,0 +1,19 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/gabeguzman/
+    - icon: github
+      text: Github
+      href: https://github.com/sirplantman
+    - icon: clipboard2-data-fill # Kaggle icon does not exist in Bootstrap. Find alternative
+      text: Kaggle
+      href: https://www.kaggle.com/sirplantman
+
+---
+
+About this blog

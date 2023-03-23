@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gabriel Guzman",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\nimport matplotlib.pyplot as plt\nplt.plot([1,2,3,4])\nplt.show()"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Gabriel Guzman",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Gabriel Guzman",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Titanic Survival A Machine Learning Based Analysis\n\n\n\n\n\n\n\nData Science\n\n\nData Analytics\n\n\nMachine Learning\n\n\nRandom Forest Algorithm\n\n\n\n\n\n\n\n\n\n\n\nMar 2, 2023\n\n\nGabriel Guzman\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Titanic Survival A Machine Learning Based Analysis\n\n\n\n\n\n\n\nData Science\n\n\nData Analytics\n\n\nMachine Learning\n\n\nRandom Forest Algorithm\n\n\n\n\n\n\n\n\n\n\n\nMar 2, 2023\n\n\nGabriel Guzman\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/titanic/index.html",
+    "href": "posts/titanic/index.html",
+    "title": "Titanic Survival A Machine Learning Based Analysis",
+    "section": "",
+    "text": "Titanic Survival: A Machine Learning based Analysis\nBased on Kaggle’s ‘Titanic - Machine Learning from Disaster’ Machine Learning Competition (https://www.kaggle.com/competitions/titanic/data)\n\n#---Installing Libraries---#\nimport numpy as np \nimport pandas as pd\n\n\n#---Loading Data---#\n\ntrain_data = pd.read_csv(\"/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv\")\n\ntest_data = pd.read_csv(\"/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv\")\n\n\n#---Exploratory Data Analysis---#\n\n# Summary of train data\ntest_data.describe()\n\n\n\n\n\n  \n    \n      \n      PassengerId\n      Survived\n      Pclass\n      Age\n      SibSp\n      Parch\n      Fare\n    \n  \n  \n    \n      count\n      891.000000\n      891.000000\n      891.000000\n      714.000000\n      891.000000\n      891.000000\n      891.000000\n    \n    \n      mean\n      446.000000\n      0.383838\n      2.308642\n      29.699118\n      0.523008\n      0.381594\n      32.204208\n    \n    \n      std\n      257.353842\n      0.486592\n      0.836071\n      14.526497\n      1.102743\n      0.806057\n      49.693429\n    \n    \n      min\n      1.000000\n      0.000000\n      1.000000\n      0.420000\n      0.000000\n      0.000000\n      0.000000\n    \n    \n      25%\n      223.500000\n      0.000000\n      2.000000\n      20.125000\n      0.000000\n      0.000000\n      7.910400\n    \n    \n      50%\n      446.000000\n      0.000000\n      3.000000\n      28.000000\n      0.000000\n      0.000000\n      14.454200\n    \n    \n      75%\n      668.500000\n      1.000000\n      3.000000\n      38.000000\n      1.000000\n      0.000000\n      31.000000\n    \n    \n      max\n      891.000000\n      1.000000\n      3.000000\n      80.000000\n      8.000000\n      6.000000\n      512.329200\n    \n  \n\n\n\n\n\n# Women survived in train data \nwomen = train_data.loc[train_data.Sex == 'female'][\"Survived\"]\nrate_women = sum(women)/len(women)\nprint(\"% of women who survived:\", rate_women)\n\n# Men survived in train data \nmen = train_data.loc[train_data.Sex == 'male'][\"Survived\"]\nrate_men = sum(men)/len(men)\nprint(\"% of men who survived:\", rate_men)\n\n% of women who survived: 0.7420382165605095\n% of men who survived: 0.18890814558058924\n\n\n\n# Machine Learning Model (Randoom Forest Algorithm)\n\nfrom sklearn.ensemble import RandomForestClassifier\n\ny = train_data[\"Survived\"]\n\nfeatures = [\"Pclass\", \"Sex\", \"SibSp\", \"Parch\"]\nX = pd.get_dummies(train_data[features])\nX_test = pd.get_dummies(test_data[features])\n\nmodel = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)\nmodel.fit(X, y)\npredictions = model.predict(X_test)\n\noutput = pd.DataFrame({'PassengerId': test_data.PassengerId, 'Survived': predictions, 'Sex': test_data.Sex})\noutput.to_csv('submission.csv', index=False)\n\n\n# Female survived = 0.910828025 \n# Male survived = 0.010398614\n\n# % of women who survived: 0.7420382165605095\n# % of men who survived: 0.18890814558058924"
+  }
+]

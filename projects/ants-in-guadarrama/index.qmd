@@ -1,6 +1,6 @@
 ---
 title: "Butterfly Population Analysis"
-author: "Gabriel Guzman"
+author: "Gabriel Guzman, Alexis Jones, Anna Imrie, Aiden Ludka"
 date: "2023-03-23"
 categories: [Data Science, Data Analytics, Biology]
 image: "image.jpg"
@@ -9,12 +9,105 @@ format:
     code-overflow: wrap
 ---
 
-# Butterfly Population Analysis in Gettysburg, PA
+# Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants"
 
-Research Project on the change of local butterfly populations and relation to plant resources. 
+Ant Morphology Analysis
 
-The insect apocalypse has 
+Our study took place in the Guadarra Mountains of Spain. Scientist measured the size of the different morphological structures of a multitude of ant taxa across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa. 
+
+The data sets we used can be found here: 
+https://doi.org/10.6084/m9.figshare.14596065.v1 ('Ant_traits_in_central_Spain')
+https://doi.org/10.6084/m9.figshare.13246619.v1 ('AntsInGuadarrama')
 
 ```{r}
+# Install and Load Packages
 
+#Downloading all desired packages into local device
+install.packages ("tidyverse", repos = "https://cran.rstudio.com") #This package allows for simplified and more intuitive syntax in R 
+install.packages ("rstatix", repos = "https://cran.rstudio.com") #This package allows for a variety of tests for statistical significance with the use of its integrated functions
+install.packages ("ggplot2", repos = "https://cran.rstudio.com") #This package allows for the 
+
+#Loading all libraries into current R notebook
+library (tidyverse)
+library (rstatix)
+library (ggplot2)
+```
+
+## HYPOTHESIS 1 
+
+```{r}
+# Import Data + Create Dataframes
+
+Ant = read.csv("Ant_traits_in_central_Spain.csv", header = TRUE) #Importing data set into R from local device for Hypothesis 1 
+
+# Result: Data in R environment, ready to be manipulated and tested for statistical significance 
+```
+
+```{r}
+# Data Summary Calculations
+
+head_mean = mean(Ant$head) #Create data frame for the mean size of ant head
+print(head_mean) #Output the value in 'head_mean', the mean size of the head
+
+leg_mean = mean(Ant$leg) #Create data frame for the mean size of ant leg
+print(leg_mean) #Output the value in 'leg_mean', the mean size of the leg
+
+scape_mean = mean(Ant$scape) #Create data frame for the mean size of ant scape
+print(scape_mean) #Output the value in 'scape_mean', the mean size of the scape
+
+eye_mean = mean(Ant$scape) #Create data frame for the mean size of ant eye
+print(eye_mean) #Output the value in 'eye_mean', the mean size of the eye
+```
+
+
+```{r}
+# Test for Statistical Significance (Linear Model)
+
+mod_head = lm(head ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_head) #Displaying the results of the linear model calculation 
+  
+mod_leg = lm(leg ~ altitude, data = Ant) #Creation of a linear model calculations for leg measurements in relation to altitude
+summary(mod_leg) #Displaying the results of the linear model calculation 
+
+mod_scape = lm(scape~ altitude, data = Ant) #Creation of a linear model calculations for scape measurements in relation to altitude
+summary(mod_scape) #Displaying the results of the linear model calculation 
+
+mod_eye = lm(eye~ altitude, data = Ant) #Creation of a linear model calculations for eye measurements in relation to altitude
+summary(mod_eye) #Displaying the results of the linear model calculation 
+
+# Result: All morphological features analyzed had a statistically significant relation to altitude (p-value < 0.05)
+```
+
+```{r}
+# Figure Creation (Linear Regression)
+
+# Linear regression figure for eye size 
+ggplot(Ant,aes(x=altitude, y=eye)) + 
+  geom_point() + 
+  theme_classic() + #Change theme  for aesthetics 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Eye Size')
+
+# Linear regression figure for head size
+ggplot(Ant,aes(x=altitude, y=head)) + 
+  geom_point() + 
+  theme_classic() + 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Head Size')
+
+# Linear regression figure for leg size
+ggplot(Ant,aes(x=altitude, y=leg)) + 
+  geom_point() + 
+  theme_classic() + 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Leg Size')
+
+# Linear regression figure for scape size
+ggplot(Ant,aes(x=altitude, y=scape)) + 
+  geom_point() + 
+  theme_classic() + 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Scape Size')
+
+# Result: Four figures depicting the relationship of ant morphology to altitude 
 ```

@@ -21,11 +21,11 @@ about:
 Biology and Environmental Science undergraduate interested in Data Science and Data Analytics. 
 
 ## Education
-Gettysburg College | Gettysburg, PA
+<strong> Gettysburg College | Gettysburg, PA </strong>
 
 B.S in Biology | Aug 2020 - May 2024
 
-B.S in Environmental Studie | Aug 2020 - May 2024
+B.S in Environmental Studies | Aug 2020 - May 2024
 
 ## Experience
 

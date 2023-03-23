@@ -1,0 +1,38 @@
+---
+title: "Butterfly Population Analysis"
+author: "Gabriel Guzman"
+date: "2023-03-23"
+categories: [Data Science, Data Analytics, Biology]
+image: "image.jpg"
+format:
+  html:
+    code-overflow: wrap
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+# Butterfly Population Analysis in Gettysburg, PA
+
+Research Project on the change of local butterfly populations and relation to plant resources. 
+
+The insect apocalypse has 
+
+```{r}
+
+```
+
+## Cross-Disciplinary Science Institute (X-SIG)
+
+The Cross-Disciplinary Science Institute or X-SIG is a program offered by Gettyburg College for undergraduate students to work on mentored research projects with faculty from a variety of departments. 
+
+#### X-SIG 2021
+[Royal Restoration of Regal Fritillary Habitat (and Other Easy-to-Pronounce Organisms)](https://xsigsummer.wordpress.com/2021/06/23/royal-restoration-of-regal-fritillary-habitat-and-other-easy-to-pronounce-organisms/){.external target="_blank"}
+
+
+#### X-SIG 2022
+[Sugar Magnolia, Blossom Blooming, Heads All Empty and I Don’t Care](https://xsigsummer.wordpress.com/2022/07/06/sugar-magnolia-blossom-blooming-heads-all-empty-and-i-dont-care/){.external target="_blank"}
+
+
+
+
+

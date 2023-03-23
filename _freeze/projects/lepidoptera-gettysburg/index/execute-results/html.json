@@ -1,0 +1,14 @@
+{
+  "hash": "b742605021f828d53f31e5e581947630",
+  "result": {
+    "markdown": "---\ntitle: \"Butterfly Population Analysis\"\nauthor: \"Gabriel Guzman\"\ndate: \"2023-03-23\"\ncategories: [Data Science, Data Analytics, Biology]\nimage: \"image.jpg\"\nformat:\n  html:\n    code-overflow: wrap\n    link-external-icon: true\n    link-external-newwindow: true\n---\n\n\n# Butterfly Population Analysis in Gettysburg, PA\n\nResearch Project on the change of local butterfly populations and relation to plant resources. \n\nThe insect apocalypse has \n\n\n::: {.cell}\n\n:::\n\n\n## Cross-Disciplinary Science Institute (X-SIG)\n\nThe Cross-Disciplinary Science Institute or X-SIG is a program offered by Gettyburg College for undergraduate students to work on mentored research projects with faculty from a variety of departments. \n\n#### X-SIG 2021\n[Royal Restoration of Regal Fritillary Habitat (and Other Easy-to-Pronounce Organisms)](https://xsigsummer.wordpress.com/2021/06/23/royal-restoration-of-regal-fritillary-habitat-and-other-easy-to-pronounce-organisms/){.external target=\"_blank\"}\n\n\n#### X-SIG 2022\n[Sugar Magnolia, Blossom Blooming, Heads All Empty and I Don’t Care](https://xsigsummer.wordpress.com/2022/07/06/sugar-magnolia-blossom-blooming-heads-all-empty-and-i-dont-care/){.external target=\"_blank\"}\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

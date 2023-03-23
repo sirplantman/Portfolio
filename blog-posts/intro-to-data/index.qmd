@@ -1,0 +1,96 @@
+---
+title: "Intro to Data Science Presentation"
+author: "Gabriel Guzman"
+date: "2023-03-02"
+categories: [Data Science, Data Analytics, Machine Learning]
+image: "intro-to-data.jpeg"
+format:
+  html:
+    code-overflow: wrap
+---
+
+# Data Science Presentation for Association of Computing Machinery
+
+Introductory data science presentation and project walkthrough with Gettysburg College students.
+
+::: columns 
+::: {.column width="55%"}
+The GBIF Data Explorer is a web application that allows users to explore and analyze biodiversity data for Poland from the Global Biodiversity Information Facility (GBIF) database.
+
+The app is built using the Shiny package for R. It includes several visualizations and filters created using the following packages: DT, shiny, shinyWidgets, shinythemes, shinyjs, bslib, bsicons, lubridate, leaflet, highcharter.... [Check out the shiny dashboard](https://hzon6a-deepsha-menghani.shinyapps.io/biodiversity_shiny_dashboard/){target="_blank"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](intro-to-data.jpeg)
+:::
+:::
+
+The Association for Computing Machinery in Gettysburg College is a student-led organization where students from different disciplines and fields with interest in computer science gather to learn from each other and to form a community. For this week's meeting, I will be giving a presentation on "Into to Data Science", demonstrating the data science and data analytics workflow, from data exploration, hypothesis making, and modelling processes required to answer data-driven questions. This presentation is adapted from Kaggle's 'Titanic - Machine Learning from Disaster' Machine Learning Competition (https://www.kaggle.com/competitions/titanic/data). 
+
+
+
+```{python}
+# Installing Libraries 
+
+import numpy as np # Numopy is a fundamental python library for scientific computation 
+import pandas as pd # Pandas provides fast data structures and data analysis tools for manipulating data in python
+```
+
+
+
+```{python}
+# Loading Datasets
+
+# Titanic survival data is divided into two datasets: Train and Test
+train_data = pd.read_csv("/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv")
+test_data = pd.read_csv("/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv")
+```
+
+```{python}
+#---Exploratory Data Analysis---#
+
+# Summary of train data
+test_data.describe()
+```
+
+```{python}
+# Women survived in train data 
+women = train_data.loc[train_data.Sex == 'female']["Survived"]
+rate_women = sum(women)/len(women)
+print("% of women who survived:", rate_women)
+
+# Men survived in train data 
+men = train_data.loc[train_data.Sex == 'male']["Survived"]
+rate_men = sum(men)/len(men)
+print("% of men who survived:", rate_men)
+```
+
+```{python}
+# Machine Learning Model (Randoom Forest Algorithm)
+
+from sklearn.ensemble import RandomForestClassifier
+
+y = train_data["Survived"]
+
+features = ["Pclass", "Sex", "SibSp", "Parch"]
+X = pd.get_dummies(train_data[features])
+X_test = pd.get_dummies(test_data[features])
+
+model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
+model.fit(X, y)
+predictions = model.predict(X_test)
+
+output = pd.DataFrame({'PassengerId': test_data.PassengerId, 'Survived': predictions, 'Sex': test_data.Sex})
+output.to_csv('submission.csv', index=False)
+```
+
+```{python}
+# Female survived = 0.910828025 
+# Male survived = 0.010398614
+
+# % of women who survived: 0.7420382165605095
+# % of men who survived: 0.18890814558058924
+```

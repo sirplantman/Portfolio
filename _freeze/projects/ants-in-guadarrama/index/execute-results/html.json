@@ -1,0 +1,14 @@
+{
+  "hash": "891c11ca81dafe005ca9a3fa92a35a9f",
+  "result": {
+    "markdown": "---\ntitle: \"Butterfly Population Analysis\"\nauthor: \"Gabriel Guzman\"\ndate: \"2023-03-23\"\ncategories: [Data Science, Data Analytics, Biology]\nimage: \"image.jpg\"\nformat:\n  html:\n    code-overflow: wrap\n---\n\n\n# Butterfly Population Analysis in Gettysburg, PA\n\nResearch Project on the change of local butterfly populations and relation to plant resources. \n\nThe insect apocalypse has \n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

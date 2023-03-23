@@ -6,12 +6,10 @@ website:
   title: "Portfolio"
   favicon: "images/favicon.png"
   page-footer:
-    center: |
-      <span class="container"><strong>[Contact: Gabriel Guzman](mailto:gabeguzman08@gmail.com){target="_blank"}</strong></span>
     left: |
       <span class="container"><strong>Made with [Posit Quarto](https://quarto.org/){target="_blank"}</strong></span>
     right: |
-      <span class="container"><strong>[Github Repo](https://github.com/sirplantman){target="_blank"}</strong></span>
+      <span class="container"><strong>[Contact](mailto:gabeguzman08@gmail.com){target="_blank"}</strong></span>
     background: "#1c1c1e"
   search:
     location: navbar
@@ -36,7 +34,6 @@ format:
   html:
     theme: lux
     css: styles.css
-    code-fold: show
     code-link: true
     highlight-style: github
     code-block-border-left: "#ceccca"

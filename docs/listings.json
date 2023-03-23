@@ -2,13 +2,14 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/titanic/index.html"
+      "/projects/ants-in-guadarrama/index.html",
+      "/projects/lepidoptera-gettysburg/index.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/blog-posts/titanic/index.html"
+      "/blog-posts/intro-to-data/index.html"
     ]
   }
 ]

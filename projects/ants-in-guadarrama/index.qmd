@@ -1,0 +1,20 @@
+---
+title: "Butterfly Population Analysis"
+author: "Gabriel Guzman"
+date: "2023-03-23"
+categories: [Data Science, Data Analytics, Biology]
+image: "image.jpg"
+format:
+  html:
+    code-overflow: wrap
+---
+
+# Butterfly Population Analysis in Gettysburg, PA
+
+Research Project on the change of local butterfly populations and relation to plant resources. 
+
+The insect apocalypse has 
+
+```{r}
+
+```

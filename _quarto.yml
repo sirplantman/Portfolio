@@ -34,7 +34,10 @@ format:
   html:
     theme: lux
     css: styles.css
-    code-link: true
+    fontsize: 0.85em
     highlight-style: github
-    code-block-border-left: "#ceccca"
-    code-block-bg: true
+    code-block-border-left: "#042c64"
+    code-block-bg: "#fffcfc"
+    code-overflow: wrap
+execute:
+  echo: true

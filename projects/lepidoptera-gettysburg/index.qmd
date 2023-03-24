@@ -1,6 +1,6 @@
 ---
 title: "Butterfly Population Analysis"
-author: "Gabriel Guzman"
+author: "Gabriel Guzman, Jamie Dinella, Zachary Hoffman, Sara Baran, Betty Ferster"
 date: "2023-03-23"
 categories: [Data Analytics, Biology]
 image: "euptoieta_claudia.JPG"
@@ -15,12 +15,6 @@ format:
 
 Research Project on the change of local butterfly populations and relation to plant resources. 
 
-The insect apocalypse has 
-
-```{r}
-
-```
-
 ## Cross-Disciplinary Science Institute (X-SIG)
 
 The Cross-Disciplinary Science Institute or X-SIG is a program offered by Gettyburg College for undergraduate students to work on mentored research projects with faculty from a variety of departments. 
@@ -32,7 +26,8 @@ The Cross-Disciplinary Science Institute or X-SIG is a program offered by Gettyb
 #### X-SIG 2022
 [Sugar Magnolia, Blossom Blooming, Heads All Empty and I Don’t Care](https://xsigsummer.wordpress.com/2022/07/06/sugar-magnolia-blossom-blooming-heads-all-empty-and-i-dont-care/){.external target="_blank"}
 
+<container> ![](xsig-presentation.png){fig-alt="X-SIG Presentation 2022"}</container> 
 
-
-
-
+<span>*Gabriel Guzman (Biology and Environmental Studies) and Professor Todd Neller (Computer Science)
+discussing Gabe's research on butterflies in the Gettysburg National Military Park. The study was conducted
+with Dr. Fester (Biology).*</span>

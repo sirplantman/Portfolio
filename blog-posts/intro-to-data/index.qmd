@@ -26,28 +26,23 @@ The Association for Computing Machinery (ACM) in Gettysburg College is a student
 :::
 :::
 
-
+### Step 1: Loading the Data
 ```{python}
-# Installing Libraries 
+import numpy as np 
+import pandas as pd
 
-import numpy as np # Numopy is a fundamental python library for scientific computation 
-import pandas as pd # Pandas provides fast data structures and data analysis tools for manipulating data in python
-```
-
-
-
-```{python}
-# Loading Datasets
+# Loading Dataset
 
 # Titanic survival data is divided into two datasets: Train and Test
 train_data = pd.read_csv("/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv")
 test_data = pd.read_csv("/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv")
 ```
 
+### Step 2: Exploratory Data Analysis
 ```{python}
-# Exploratory Data Analysis
+#| output: true
 
-# Summary of train data
+# Tabular Output of 'test_data'
 test_data.describe()
 ```
 

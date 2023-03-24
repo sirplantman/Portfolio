@@ -11,7 +11,7 @@ format:
 
 # Data Science Presentation for Association of Computing Machinery
 
-**Description:** Introductory data science presentation and project walkthrough with Gettysburg College students
+Description: Introductory data science presentation and project walkthrough with Gettysburg College students
 
 ::: columns 
 ::: {.column width="55%"}
@@ -45,7 +45,7 @@ test_data = pd.read_csv("/Users/gabrielguzman/School/Research/Data Science/titan
 ```
 
 ```{python}
-#---Exploratory Data Analysis---#
+# Exploratory Data Analysis
 
 # Summary of train data
 test_data.describe()
@@ -64,7 +64,7 @@ print("% of men who survived:", rate_men)
 ```
 
 ```{python}
-# Machine Learning Model (Randoom Forest Algorithm)
+# Machine Learning Model (Random Forest Algorithm)
 
 from sklearn.ensemble import RandomForestClassifier
 

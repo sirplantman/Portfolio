@@ -9,7 +9,7 @@ website:
     left: |
       <span class="container"><strong>Made with [Posit Quarto](https://quarto.org/){target="_blank"}</strong></span>
     right: |
-      <span class="container"><strong>[Contact](mailto:gabeguzman08@gmail.com){target="_blank"}</strong></span>
+      <span class="container"><strong>[Contact Me](mailto:gabeguzman08@gmail.com){target="_blank"}</strong></span>
     background: "#1c1c1e"
   search:
     location: navbar

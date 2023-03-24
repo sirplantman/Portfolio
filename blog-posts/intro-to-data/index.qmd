@@ -11,13 +11,11 @@ format:
 
 # Data Science Presentation for Association of Computing Machinery
 
-Introductory data science presentation and project walkthrough with Gettysburg College students.
+**Description:** Introductory data science presentation and project walkthrough with Gettysburg College students
 
 ::: columns 
 ::: {.column width="55%"}
-The GBIF Data Explorer is a web application that allows users to explore and analyze biodiversity data for Poland from the Global Biodiversity Information Facility (GBIF) database.
-
-The app is built using the Shiny package for R. It includes several visualizations and filters created using the following packages: DT, shiny, shinyWidgets, shinythemes, shinyjs, bslib, bsicons, lubridate, leaflet, highcharter.... [Check out the shiny dashboard](https://hzon6a-deepsha-menghani.shinyapps.io/biodiversity_shiny_dashboard/){target="_blank"}
+The Association for Computing Machinery (ACM) in Gettysburg College is a student-led organization where students from different disciplines and fields with interest in computer science gather to learn from each other and to form a community on campus. For this week's meeting, gave a presentation on "Into to Data Science", demonstrating the data science and data analytics workflow, from data exploration, hypothesis testing, and modelling processes useful to answer data-driven questions. This presentation is adapted from Kaggle's [Titanic - Machine Learning from Disaster' Machine Learning Competition.](https://www.kaggle.com/competitions/titanic/data){.external target="_blank"}
 :::
 
 ::: {.column width="5%"}
@@ -27,9 +25,6 @@ The app is built using the Shiny package for R. It includes several visualizatio
 ![](intro-to-data.jpeg)
 :::
 :::
-
-The Association for Computing Machinery in Gettysburg College is a student-led organization where students from different disciplines and fields with interest in computer science gather to learn from each other and to form a community. For this week's meeting, I will be giving a presentation on "Into to Data Science", demonstrating the data science and data analytics workflow, from data exploration, hypothesis making, and modelling processes required to answer data-driven questions. This presentation is adapted from Kaggle's 'Titanic - Machine Learning from Disaster' Machine Learning Competition (https://www.kaggle.com/competitions/titanic/data). 
-
 
 
 ```{python}

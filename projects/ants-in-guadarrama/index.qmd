@@ -1,23 +1,36 @@
 ---
-title: "Butterfly Population Analysis"
+title: "Ant Morphology Analysis"
 author: "Gabriel Guzman, Alexis Jones, Anna Imrie, Aiden Ludka"
 date: "2023-03-23"
-categories: [Data Science, Data Analytics, Biology]
-image: "image.jpg"
+categories: [Data Analytics, Biology]
+image: "aphaenogaster_gibbosa.JPG"
 format:
   html:
     code-overflow: wrap
 ---
 
-# Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants"
+# Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants
 
-Ant Morphology Analysis
+**Description:** Statistical Analysis on the morphology and eating preference ants
 
-Our study took place in the Guadarra Mountains of Spain. Scientist measured the size of the different morphological structures of a multitude of ant taxa across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa. 
+::: columns 
+::: {.column width="55%"}
+Our study took place in the Guadarra Mountains of Spain. Scientists measured the size of the different morphological structures of a multitude of ant genera across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa. 
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](aphaenogaster_gibbosa.JPG)
+:::
+:::
 
 The data sets we used can be found here: 
-https://doi.org/10.6084/m9.figshare.14596065.v1 ('Ant_traits_in_central_Spain')
-https://doi.org/10.6084/m9.figshare.13246619.v1 ('AntsInGuadarrama')
+
+['Ant_traits_in_central_Spain'](https://doi.org/10.6084/m9.figshare.14596065.v1){.external target="_blank"}
+
+['AntsInGuadarrama'](https://doi.org/10.6084/m9.figshare.13246619.v1){.external target="_blank"}
 
 ```{r}
 # Install and Load Packages
@@ -111,3 +124,4 @@ ggplot(Ant,aes(x=altitude, y=scape)) +
 
 # Result: Four figures depicting the relationship of ant morphology to altitude 
 ```
+

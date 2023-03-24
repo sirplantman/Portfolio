@@ -9,7 +9,7 @@
 <meta name="author" content="Gabriel Guzman, Alexis Jones, Anna Imrie, Aiden Ludka">
 <meta name="dcterms.date" content="2023-03-23">
 
-<title>Portfolio - Butterfly Population Analysis</title>
+<title>Portfolio - Ant Morphology Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -187,9 +187,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Butterfly Population Analysis</h1>
+      <h1 class="title">Ant Morphology Analysis</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Data Science</div>
                 <div class="quarto-category">Data Analytics</div>
                 <div class="quarto-category">Biology</div>
               </div>
@@ -228,10 +227,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <section id="altitude-associated-changes-in-ant-morphology-and-genus-dependent-resource-preference-in-guadarrama-ants" class="level1">
-<h1>Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants”</h1>
-<p>Ant Morphology Analysis</p>
-<p>Our study took place in the Guadarra Mountains of Spain. Scientist measured the size of the different morphological structures of a multitude of ant taxa across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa.</p>
-<p>The data sets we used can be found here: https://doi.org/10.6084/m9.figshare.14596065.v1 (‘Ant_traits_in_central_Spain’) https://doi.org/10.6084/m9.figshare.13246619.v1 (‘AntsInGuadarrama’)</p>
+<h1>Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants</h1>
+<p><strong>Description:</strong> Statistical Analysis on the morphology and eating preference ants</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Our study took place in the Guadarra Mountains of Spain. Scientists measured the size of the different morphological structures of a multitude of ant genera across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa.</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<p><img src="aphaenogaster_gibbosa.JPG" class="img-fluid"></p>
+</div>
+</div>
+<p>The data sets we used can be found here:</p>
+<p><a href="https://doi.org/10.6084/m9.figshare.14596065.v1" class="external" target="_blank">‘Ant_traits_in_central_Spain’</a></p>
+<p><a href="https://doi.org/10.6084/m9.figshare.13246619.v1" class="external" target="_blank">‘AntsInGuadarrama’</a></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install and Load Packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -240,19 +249,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//Rtmp1kgXd6/downloaded_packages</code></pre>
+    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//RtmpQxPVfo/downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span> (<span class="st">"rstatix"</span>, <span class="at">repos =</span> <span class="st">"https://cran.rstudio.com"</span>) <span class="co">#This package allows for a variety of tests for statistical significance with the use of its integrated functions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//Rtmp1kgXd6/downloaded_packages</code></pre>
+    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//RtmpQxPVfo/downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span> (<span class="st">"ggplot2"</span>, <span class="at">repos =</span> <span class="st">"https://cran.rstudio.com"</span>) <span class="co">#This package allows for the </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//Rtmp1kgXd6/downloaded_packages</code></pre>
+    /var/folders/jm/8d66kd6x0qx0lyr8t1y3djg00000gn/T//RtmpQxPVfo/downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Loading all libraries into current R notebook</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

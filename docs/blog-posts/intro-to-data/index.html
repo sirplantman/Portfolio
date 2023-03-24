@@ -195,7 +195,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                 <div class="quarto-category">Data Science</div>
                 <div class="quarto-category">Data Analytics</div>
                 <div class="quarto-category">Machine Learning</div>
-                <div class="quarto-category">Random Forest Algorithm</div>
               </div>
                   </div>
   </div>
@@ -233,28 +232,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="data-science-presentation-for-association-of-computing-machinery" class="level1">
 <h1>Data Science Presentation for Association of Computing Machinery</h1>
-<p>Introductory data science presentation and project walkthrough with Gettysburg College students.</p>
+<p><strong>Description:</strong> Introductory data science presentation and project walkthrough with Gettysburg College students</p>
 <div class="columns">
 <div class="column" style="width:55%;">
-<p>The GBIF Data Explorer is a web application that allows users to explore and analyze biodiversity data for Poland from the Global Biodiversity Information Facility (GBIF) database.</p>
-<p>The app is built using the Shiny package for R. It includes several visualizations and filters created using the following packages: DT, shiny, shinyWidgets, shinythemes, shinyjs, bslib, bsicons, lubridate, leaflet, highcharter…. <a href="https://hzon6a-deepsha-menghani.shinyapps.io/biodiversity_shiny_dashboard/" target="_blank">Check out the shiny dashboard</a></p>
+<p>The Association for Computing Machinery (ACM) in Gettysburg College is a student-led organization where students from different disciplines and fields with interest in computer science gather to learn from each other and to form a community on campus. For this week’s meeting, gave a presentation on “Into to Data Science”, demonstrating the data science and data analytics workflow, from data exploration, hypothesis testing, and modelling processes useful to answer data-driven questions. This presentation is adapted from Kaggle’s <a href="https://www.kaggle.com/competitions/titanic/data" class="external" target="_blank">Titanic - Machine Learning from Disaster’ Machine Learning Competition.</a></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:40%;">
 <p><img src="intro-to-data.jpeg" class="img-fluid"></p>
 </div>
 </div>
-<p>The Association for Computing Machinery in Gettysburg College is a student-led organization where students from different disciplines and fields with interest in computer science gather to learn from each other and to form a community. For this week’s meeting, I will be giving a presentation on “Into to Data Science”, demonstrating the data science and data analytics workflow, from data exploration, hypothesis making, and modelling processes required to answer data-driven questions. This presentation is adapted from Kaggle’s ‘Titanic - Machine Learning from Disaster’ Machine Learning Competition (https://www.kaggle.com/competitions/titanic/data).</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---Installing Libraries---#</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installing Libraries </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co"># Numopy is a fundamental python library for scientific computation </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># Pandas provides fast data structures and data analysis tools for manipulating data in python</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---Loading Data---#</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading Datasets</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>train_data <span class="op">=</span> pd.read_csv(<span class="st">"/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Titanic survival data is divided into two datasets: Train and Test</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>train_data <span class="op">=</span> pd.read_csv(<span class="st">"/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv"</span>)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>test_data <span class="op">=</span> pd.read_csv(<span class="st">"/Users/gabrielguzman/School/Research/Data Science/titanic/train.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="3">
@@ -262,7 +260,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary of train data</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>test_data.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="21">
 
 <div>
 
@@ -547,8 +545,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><span class="container"><strong>Made with <a href="https://quarto.org/" target="_blank">Posit Quarto</a></strong></span></div>   
-      <div class="nav-footer-center"><span class="container"><strong><a href="mailto:gabeguzman08@gmail.com" target="_blank">Contact: Gabriel Guzman</a></strong></span></div>
-    <div class="nav-footer-right"><span class="container"><strong><a href="https://github.com/sirplantman" target="_blank">Github Repo</a></strong></span></div>
+    <div class="nav-footer-right"><span class="container"><strong><a href="mailto:gabeguzman08@gmail.com" target="_blank">Contact</a></strong></span></div>
   </div>
 </footer>
 

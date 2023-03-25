@@ -1,6 +1,6 @@
 ---
 title: "Ant Morphology Analysis"
-author: "Gabriel Guzman, Alexis Jones, Anna Imrie, Aiden Ludka"
+author: "Gabriel Guzman"
 date: "2023-03-23"
 categories: [Data Analytics, Biology]
 image: "aphaenogaster_gibbosa.JPG"
@@ -11,7 +11,7 @@ format:
 
 # Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants
 
-**Description:** Statistical Analysis on the morphology and eating preference ants
+Description: Statistical Analysis on the morphology and resource preference in ants
 
 ::: columns 
 ::: {.column width="55%"}
@@ -33,6 +33,8 @@ The data sets we used can be found here:
 ['AntsInGuadarrama'](https://doi.org/10.6084/m9.figshare.13246619.v1){.external target="_blank"}
 
 ```{r}
+#| output: false
+
 # Install and Load Packages
 
 #Downloading all desired packages into local device
@@ -46,18 +48,15 @@ library (rstatix)
 library (ggplot2)
 ```
 
-## HYPOTHESIS 1 
+## HYPOTHESIS 1
 
+### Data Summary Calculations
 ```{r}
+#| output: false
+
 # Import Data + Create Dataframes
 
 Ant = read.csv("Ant_traits_in_central_Spain.csv", header = TRUE) #Importing data set into R from local device for Hypothesis 1 
-
-# Result: Data in R environment, ready to be manipulated and tested for statistical significance 
-```
-
-```{r}
-# Data Summary Calculations
 
 head_mean = mean(Ant$head) #Create data frame for the mean size of ant head
 print(head_mean) #Output the value in 'head_mean', the mean size of the head
@@ -72,27 +71,39 @@ eye_mean = mean(Ant$scape) #Create data frame for the mean size of ant eye
 print(eye_mean) #Output the value in 'eye_mean', the mean size of the eye
 ```
 
+### Test for Statistical Significance (Linear Regression)
 
+::: columns 
+::: {.column width="48%"}
 ```{r}
-# Test for Statistical Significance (Linear Model)
-
 mod_head = lm(head ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
 summary(mod_head) #Displaying the results of the linear model calculation 
   
 mod_leg = lm(leg ~ altitude, data = Ant) #Creation of a linear model calculations for leg measurements in relation to altitude
 summary(mod_leg) #Displaying the results of the linear model calculation 
+```
+:::
 
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+```{r}
 mod_scape = lm(scape~ altitude, data = Ant) #Creation of a linear model calculations for scape measurements in relation to altitude
 summary(mod_scape) #Displaying the results of the linear model calculation 
 
 mod_eye = lm(eye~ altitude, data = Ant) #Creation of a linear model calculations for eye measurements in relation to altitude
 summary(mod_eye) #Displaying the results of the linear model calculation 
-
-# Result: All morphological features analyzed had a statistically significant relation to altitude (p-value < 0.05)
 ```
+:::
+:::
+
+Result: All morphological features analyzed had a statistically significant relation to altitude (p-value < 0.05)
+
+### Figure Creation (Linear Regression)
 
 ```{r}
-# Figure Creation (Linear Regression)
+#| warning: false
 
 # Linear regression figure for eye size 
 ggplot(Ant,aes(x=altitude, y=eye)) + 
@@ -121,7 +132,8 @@ ggplot(Ant,aes(x=altitude, y=scape)) +
   theme_classic() + 
   geom_smooth(method="lm") + 
   labs(x='Altitude (in meters)', y='Logged Scape Size')
-
-# Result: Four figures depicting the relationship of ant morphology to altitude 
 ```
 
+Result: Four figures depicting the relationship of ant morphology to altitude 
+
+# TL;DR

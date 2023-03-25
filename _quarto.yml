@@ -32,6 +32,7 @@ website:
         href: https://www.linkedin.com/in/gabeguzman/
 format:
   html:
+    page-layout: full
     theme: lux
     css: styles.css
     fontsize: 0.85em

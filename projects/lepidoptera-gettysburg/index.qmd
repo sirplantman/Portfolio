@@ -1,6 +1,6 @@
 ---
 title: "Butterfly Population Analysis"
-author: "Gabriel Guzman, Jamie Dinella, Zachary Hoffman, Sara Baran, Betty Ferster"
+author: "Gabriel Guzman"
 date: "2023-03-23"
 categories: [Data Analytics, Biology]
 image: "euptoieta_claudia.JPG"
@@ -10,6 +10,7 @@ format:
     link-external-icon: true
     link-external-newwindow: true
 ---
+:::{.column-page}
 
 # Butterfly Population Analysis in Gettysburg, PA
 
@@ -31,3 +32,5 @@ The Cross-Disciplinary Science Institute or X-SIG is a program offered by Gettyb
 <span>*Gabriel Guzman (Biology and Environmental Studies) and Professor Todd Neller (Computer Science)
 discussing Gabe's research on butterflies in the Gettysburg National Military Park. The study was conducted
 with Dr. Fester (Biology).*</span>
+
+:::

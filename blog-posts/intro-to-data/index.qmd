@@ -8,6 +8,7 @@ format:
   html:
     code-overflow: wrap
 ---
+:::{.column-page}
 
 # Data Science Presentation for Association of Computing Machinery
 
@@ -84,3 +85,5 @@ output.to_csv('submission.csv', index=False)
 # % of women who survived: 0.7420382165605095
 # % of men who survived: 0.18890814558058924
 ```
+
+:::

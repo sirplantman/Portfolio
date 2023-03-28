@@ -14,14 +14,18 @@ format:
 Description: Statistical Analysis on the morphology and resource preference in ants
 
 ::: columns 
-::: {.column width="55%"}
+::: {.column width="48%"}
 Our study took place in the Guadarra Mountains of Spain. Scientists measured the size of the different morphological structures of a multitude of ant genera across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa. 
+
+ADD TEXT 
+
+ADD TEXT
 :::
 
-::: {.column width="5%"}
+::: {.column width="4%"}
 :::
 
-::: {.column width="40%"}
+::: {.column width="48%"}
 ![](aphaenogaster_gibbosa.JPG)
 :::
 :::
@@ -73,15 +77,12 @@ print(eye_mean) #Output the value in 'eye_mean', the mean size of the eye
 
 ### Test for Statistical Significance (Linear Regression)
 
+<!-- Eye Code + Output -->
 ::: columns 
 ::: {.column width="48%"}
-```{r}
-mod_head = lm(head ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
-summary(mod_head) #Displaying the results of the linear model calculation 
-  
-mod_leg = lm(leg ~ altitude, data = Ant) #Creation of a linear model calculations for leg measurements in relation to altitude
-summary(mod_leg) #Displaying the results of the linear model calculation 
-```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.
 :::
 
 ::: {.column width="4%"}
@@ -89,11 +90,105 @@ summary(mod_leg) #Displaying the results of the linear model calculation
 
 ::: {.column width="48%"}
 ```{r}
-mod_scape = lm(scape~ altitude, data = Ant) #Creation of a linear model calculations for scape measurements in relation to altitude
-summary(mod_scape) #Displaying the results of the linear model calculation 
+#| echo: true
+#| output: false
 
-mod_eye = lm(eye~ altitude, data = Ant) #Creation of a linear model calculations for eye measurements in relation to altitude
+mod_eye = lm(eye ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
 summary(mod_eye) #Displaying the results of the linear model calculation 
+```
+
+```{r}
+#| echo: false
+#| output: true
+
+mod_eye = lm(eye ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_eye) #Displaying the results of the linear model calculation 
+```
+:::
+:::
+
+<!-- Head Code + Output -->
+::: columns 
+::: {.column width="48%"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+```{r}
+#| echo: true
+#| output: false
+
+mod_head = lm(head ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_head) #Displaying the results of the linear model calculation 
+```
+```{r}
+#| echo: false
+#| output: true
+
+mod_head = lm(head ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_head) #Displaying the results of the linear model calculation 
+```
+:::
+:::
+<!-- Leg Code + Output -->
+::: columns 
+::: {.column width="48%"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+```{r}
+#| echo: true
+#| output: false
+
+mod_leg = lm(leg ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_leg) #Displaying the results of the linear model calculation 
+```
+```{r}
+#| echo: false
+#| output: true
+
+mod_leg = lm(leg ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_leg) #Displaying the results of the linear model calculation 
+```
+:::
+:::
+
+<!-- Scape Code + Output -->
+::: columns 
+::: {.column width="48%"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+```{r}
+#| echo: true
+#| output: false
+
+mod_scape = lm(scape ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_scape) #Displaying the results of the linear model calculation 
+```
+```{r}
+#| echo: false
+#| output: true
+
+mod_scape = lm(scape ~ altitude, data = Ant) #Creation of a linear model calculations for head measurements in relation to altitude
+summary(mod_scape) #Displaying the results of the linear model calculation 
 ```
 :::
 :::
@@ -103,6 +198,7 @@ Result: All morphological features analyzed had a statistically significant rela
 ### Figure Creation (Linear Regression)
 
 ```{r}
+#| echo: true 
 #| warning: false
 
 # Linear regression figure for eye size 
@@ -137,3 +233,31 @@ ggplot(Ant,aes(x=altitude, y=scape)) +
 Result: Four figures depicting the relationship of ant morphology to altitude 
 
 # TL;DR
+
+<!-- ::: columns 
+::: {.column width="48%"}
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+
+# Linear regression figure for eye size 
+
+```{r}
+#| echo: true 
+#| warning: false
+#| output: true
+
+# Linear regression figure for eye size 
+
+ggplot(Ant,aes(x=altitude, y=eye)) + 
+  geom_point() + 
+  theme_classic() + # Change theme  for aesthetics 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Eye Size')
+```
+:::
+::: -->

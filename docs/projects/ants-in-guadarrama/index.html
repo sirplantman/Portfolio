@@ -230,11 +230,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Altitude Associated Changes in ant Morphology and Genus-dependent Resource Preference in Guadarrama Ants</h1>
 <p>Description: Statistical Analysis on the morphology and resource preference in ants</p>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:48%;">
 <p>Our study took place in the Guadarra Mountains of Spain. Scientists measured the size of the different morphological structures of a multitude of ant genera across varying altitudes and regions of Guadarra mountain range as well as the resources ants were observed using. We aim to analyze how the size of the measured morphological features varies with altitude as well as to understand a genus-specific preference for certain resource types across ant taxa.</p>
-</div><div class="column" style="width:5%;">
+<p>ADD TEXT</p>
+<p>ADD TEXT</p>
+</div><div class="column" style="width:4%;">
 
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:48%;">
 <p><img src="aphaenogaster_gibbosa.JPG" class="img-fluid"></p>
 </div>
 </div>
@@ -278,85 +280,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="test-for-statistical-significance-linear-regression" class="level3">
 <h3 class="anchored" data-anchor-id="test-for-statistical-significance-linear-regression">Test for Statistical Significance (Linear Regression)</h3>
+<!-- Eye Code + Output -->
 <div class="columns">
 <div class="column" style="width:48%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mod_head <span class="ot">=</span> <span class="fu">lm</span>(head <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for head measurements in relation to altitude</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_head) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = head ~ altitude, data = Ant)
-
-Residuals:
-     Min       1Q   Median       3Q      Max 
--0.75324 -0.29602 -0.04399  0.22126  2.37833 
-
-Coefficients:
-              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  1.187e+00  3.613e-02  32.863  &lt; 2e-16 ***
-altitude    -1.252e-04  2.663e-05  -4.701 2.92e-06 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.4098 on 1064 degrees of freedom
-  (13 observations deleted due to missingness)
-Multiple R-squared:  0.02035,   Adjusted R-squared:  0.01943 
-F-statistic:  22.1 on 1 and 1064 DF,  p-value: 2.925e-06</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mod_leg <span class="ot">=</span> <span class="fu">lm</span>(leg <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for leg measurements in relation to altitude</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_leg) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = leg ~ altitude, data = Ant)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--1.0824 -0.5439 -0.1428  0.5350  2.5360 
-
-Coefficients:
-              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  1.486e+00  5.796e-02  25.646  &lt; 2e-16 ***
-altitude    -2.368e-04  4.271e-05  -5.543 3.74e-08 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.6574 on 1064 degrees of freedom
-  (13 observations deleted due to missingness)
-Multiple R-squared:  0.02807,   Adjusted R-squared:  0.02716 
-F-statistic: 30.73 on 1 and 1064 DF,  p-value: 3.743e-08</code></pre>
-</div>
-</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.</p>
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:48%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mod_scape <span class="ot">=</span> <span class="fu">lm</span>(scape<span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for scape measurements in relation to altitude</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_scape) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = scape ~ altitude, data = Ant)
-
-Residuals:
-     Min       1Q   Median       3Q      Max 
--0.84836 -0.40154 -0.08094  0.40349  2.33945 
-
-Coefficients:
-              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  1.324e+00  4.402e-02  30.087  &lt; 2e-16 ***
-altitude    -2.205e-04  3.244e-05  -6.796 1.78e-11 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.4993 on 1064 degrees of freedom
-  (13 observations deleted due to missingness)
-Multiple R-squared:  0.04161,   Adjusted R-squared:  0.04071 
-F-statistic: 46.19 on 1 and 1064 DF,  p-value: 1.783e-11</code></pre>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mod_eye <span class="ot">=</span> <span class="fu">lm</span>(eye <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for head measurements in relation to altitude</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_eye) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mod_eye <span class="ot">=</span> <span class="fu">lm</span>(eye<span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for eye measurements in relation to altitude</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_eye) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -381,6 +317,117 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 </div>
 </div>
 </div>
+<!-- Head Code + Output -->
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mod_head <span class="ot">=</span> <span class="fu">lm</span>(head <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for head measurements in relation to altitude</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_head) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = head ~ altitude, data = Ant)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.75324 -0.29602 -0.04399  0.22126  2.37833 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  1.187e+00  3.613e-02  32.863  &lt; 2e-16 ***
+altitude    -1.252e-04  2.663e-05  -4.701 2.92e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.4098 on 1064 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared:  0.02035,   Adjusted R-squared:  0.01943 
+F-statistic:  22.1 on 1 and 1064 DF,  p-value: 2.925e-06</code></pre>
+</div>
+</div>
+</div>
+</div>
+<!-- Leg Code + Output -->
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mod_leg <span class="ot">=</span> <span class="fu">lm</span>(leg <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for head measurements in relation to altitude</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_leg) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = leg ~ altitude, data = Ant)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0824 -0.5439 -0.1428  0.5350  2.5360 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  1.486e+00  5.796e-02  25.646  &lt; 2e-16 ***
+altitude    -2.368e-04  4.271e-05  -5.543 3.74e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.6574 on 1064 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared:  0.02807,   Adjusted R-squared:  0.02716 
+F-statistic: 30.73 on 1 and 1064 DF,  p-value: 3.743e-08</code></pre>
+</div>
+</div>
+</div>
+</div>
+<!-- Scape Code + Output -->
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, vulputate eu nulla sed, efficitur porta quam. In hac habitasse platea dictumst. Nulla id ex ipsum. Maecenas scelerisque, ante at aliquam tincidunt, leo sem sodales ante, suscipit aliquam mi sapien vitae arcu. Phasellus commodo ullamcorper porttitor. Cras aliquam elit vitae porta vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec euismod interdum metus auctor facilisis. Vivamus pellentesque ex quam, sit amet tristique quam gravida sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Sed aliquam imperdiet tincidunt. Donec non iaculis lectus. Donec arcu velit, posuere sit amet justo vel, luctus feugiat nibh. Donec pellentesque imperdiet enim, quis vestibulum enim elementum sed. Praesent tempor orci sed erat fermentum mollis. Nulla feugiat, orci non posuere sollicitudin, tortor nibh convallis nisl, eleifend ultricies lorem eros nec leo. Nam et laoreet elit. Pellentesque tristique quis est quis posuere. Aenean vulputate mauris id sapien eleifend, non ultrices risus facilisis. Vestibulum maximus massa in mi auctor vehicula.</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mod_scape <span class="ot">=</span> <span class="fu">lm</span>(scape <span class="sc">~</span> altitude, <span class="at">data =</span> Ant) <span class="co">#Creation of a linear model calculations for head measurements in relation to altitude</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_scape) <span class="co">#Displaying the results of the linear model calculation </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = scape ~ altitude, data = Ant)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.84836 -0.40154 -0.08094  0.40349  2.33945 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  1.324e+00  4.402e-02  30.087  &lt; 2e-16 ***
+altitude    -2.205e-04  3.244e-05  -6.796 1.78e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.4993 on 1064 degrees of freedom
+  (13 observations deleted due to missingness)
+Multiple R-squared:  0.04161,   Adjusted R-squared:  0.04071 
+F-statistic: 46.19 on 1 and 1064 DF,  p-value: 1.783e-11</code></pre>
+</div>
+</div>
+</div>
+</div>
 <p>Result: All morphological features analyzed had a statistically significant relation to altitude (p-value &lt; 0.05)</p>
 </section>
 <section id="figure-creation-linear-regression" class="level3">
@@ -393,7 +440,7 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Altitude (in meters)'</span>, <span class="at">y=</span><span class="st">'Logged Eye Size'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear regression figure for head size</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ant,<span class="fu">aes</span>(<span class="at">x=</span>altitude, <span class="at">y=</span>head)) <span class="sc">+</span> </span>
@@ -402,7 +449,7 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Altitude (in meters)'</span>, <span class="at">y=</span><span class="st">'Logged Head Size'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear regression figure for leg size</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ant,<span class="fu">aes</span>(<span class="at">x=</span>altitude, <span class="at">y=</span>leg)) <span class="sc">+</span> </span>
@@ -411,7 +458,7 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Altitude (in meters)'</span>, <span class="at">y=</span><span class="st">'Logged Leg Size'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-5-3.png" class="img-fluid" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-3.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear regression figure for scape size</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ant,<span class="fu">aes</span>(<span class="at">x=</span>altitude, <span class="at">y=</span>scape)) <span class="sc">+</span> </span>
@@ -420,7 +467,7 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">'Altitude (in meters)'</span>, <span class="at">y=</span><span class="st">'Logged Scape Size'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-5-4.png" class="img-fluid" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-4.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Result: Four figures depicting the relationship of ant morphology to altitude</p>
@@ -429,6 +476,56 @@ F-statistic: 13.81 on 1 and 1064 DF,  p-value: 0.0002126</code></pre>
 </section>
 <section id="tldr" class="level1">
 <h1>TL;DR</h1>
+<!-- ::: columns 
+::: {.column width="48%"}
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+
+# Linear regression figure for eye size 
+
+
+::: {.cell}
+
+```{.r .cell-code}
+# Linear regression figure for eye size 
+
+ggplot(Ant,aes(x=altitude, y=eye)) + 
+  geom_point() + 
+  theme_classic() + # Change theme  for aesthetics 
+  geom_smooth(method="lm") + 
+  labs(x='Altitude (in meters)', y='Logged Eye Size')
+```
+
+::: {.cell-output .cell-output-stderr}
+```
+`geom_smooth()` using formula = 'y ~ x'
+```
+:::
+
+::: {.cell-output .cell-output-stderr}
+```
+Warning: Removed 13 rows containing non-finite values (`stat_smooth()`).
+```
+:::
+
+::: {.cell-output .cell-output-stderr}
+```
+Warning: Removed 13 rows containing missing values (`geom_point()`).
+```
+:::
+
+::: {.cell-output-display}
+![](index_files/figure-html/unnamed-chunk-12-1.png){width=672}
+:::
+:::
+
+:::
+::: -->
 
 
 </section>

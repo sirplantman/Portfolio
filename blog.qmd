@@ -4,5 +4,5 @@ listing:
   contents: blog-posts
   sort: "date desc"
   type: grid
-  categories: true
+  categories: false
 ---

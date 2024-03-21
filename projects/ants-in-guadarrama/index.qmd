@@ -50,7 +50,6 @@ The original research papers can be found here:
 :::
 :::
 
-
 --------
 ```{r}
 #| output: false
